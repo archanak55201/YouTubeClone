@@ -1,0 +1,219 @@
+.column{
+    /* border: 2px solid rgb(218, 143, 143); */
+    display: grid;
+    height: 92.2vh;
+    grid-template-columns: 11fr 5fr;
+    overflow-y: scroll;
+    
+}
+.player{
+    /* border:2px solid blue; */
+    /* padding: 20px; */
+    margin-left: 48px;
+    position: relative;
+    padding-top: 2.6vh;
+    padding-right: 1vw;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+.video-player{
+    border: 2px solid green;
+    height:590px;
+
+}
+.player-detail{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+.video-title-like{
+    /* border: 1px solid blanchedalmond; */
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+}
+.title{
+    padding: 3px;
+    padding-left: 0px;
+    /* border: 1px solid rgb(247, 8, 116); */
+    font-size: 21px;
+    font-weight: 550;
+    
+
+}
+.subscribe-like{
+    /* border: 1px solid rgb(48, 249, 8); */
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: space-between;
+    padding-top: 5px;
+}
+.about-channel{
+    display: flex;
+    flex-direction: row;
+    gap: 22px;
+}
+.subscribe-button{
+    /* border: 1px solid red ; */
+    border-radius: 26px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: rgb(253, 253, 253);
+    color: black;
+    padding: 11px 15px 11px 15px;
+
+
+    /* letter-spacing: 0.5px; */
+}
+.like-dislike{
+    border-radius: 26px;
+    background-color: #2a2929cd;
+    padding: 10px 15px 10px 15px;
+    font-size: 17px;
+    font-weight: 500;
+}
+.like-share-button{
+    /* border: 1px solid blueviolet; */
+    border-radius: 26px;
+    background-color: #2a2929cd;
+    padding: 10px 15px 10px 15px;
+    font-size: 17px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.like-share-button:hover{
+    background-color: #56565684;
+}
+.like-share-button>span{
+    /* border: 1px solid blue; */
+    padding: 2px;
+    margin: 4px;
+}
+
+.video-description{
+    padding: 15px 10px 15px 10px;
+    background-color: #3736369f;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+    
+}
+.video-comment{
+    /* border: 1px solid white; */
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+    font-size: 18px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+
+}
+.sortby, .comment{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+}
+.add-comment{
+    /* border: 1px solid yellow; */
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.write-comment>div>input{
+    font-size: 18px;
+    font-weight: 500;
+    background-color: inherit;
+    padding: 5px;
+    border: none;
+    outline: none;
+    width: 100%;
+    color: rgba(173, 172, 172, 0.868);
+}
+.write-comment>div>input:focus{
+    color: white;
+}
+.comment-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 10px; 
+    padding-bottom: 10px;
+    border-top: 1px solid rgb(162, 162, 162);
+}
+.comment-button>div>button{
+    border-radius: 20px;
+    background-color: rgba(46, 45, 45, 0.682);
+    font-size: 16px;
+    color: gray;
+    font-weight: 400;
+    padding: 9px;
+    border:none;
+    outline: none;
+    margin-left: 15px;
+}
+.commentDetail{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    width: 87%;
+}
+.video-comment{
+    display: flex;
+    flex-direction: row;
+    gap:20px
+}
+.comment-likes{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+
+}
+.comment-likes>div>img:hover{
+    border-radius: 50%;
+    background-color: rgba(39, 38, 38, 0.774);
+}
+.select-reply{
+    padding:2px 5px 2px 5px;
+    margin-left: 20px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.select-reply:hover{
+    background-color: rgba(81, 81, 81, 0.656);
+}
+.replies{
+    /* margin-left: 80px; */
+    font-size: 18px;
+    padding: 7px;
+    border-radius: 15px;
+    color:rgb(4, 181, 251);
+    cursor: pointer;
+}
+
+.replies:hover{
+    background-color: rgba(73, 146, 198, 0.533);
+}
+.secondary{
+    /* border:2px solid rgb(195, 251, 10); */
+    padding-top:20px ;
+    padding-right:20px ;
+    /* gap:10px */
+}
+.other-videos{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+.other-video-title{
+    font-size: 16px;
+    font-weight: 500;
+}
+.other-video-channel{
+    font-size: 15px;
+    color: rgba(176, 174, 174, 0.886);
+}

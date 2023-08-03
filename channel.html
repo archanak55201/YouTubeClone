@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="channel.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+ 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <div style=" height: 100vh;overflow-y: hidden;padding-right: 2px;">
+        <header>
+           <div class="head-conatiner">
+               <div class="head-left">
+                   <div style="background-color: #41404088;padding:2px;padding-bottom: 35px;border-radius: 50%;">
+                       <span class="material-symbols-outlined " id="sidebar-menu" style="font-size: 35px;font-weight: 100;">
+                           menu
+                           </span>
+                   </div>
+                   <div class="logo">
+                       
+                       <img src="images/youtube-logo.svg" style="height:23px;padding-top:5px" alt="YouTube">
+                       <sup style="font-size: 11px;position: absolute;padding-left: 2px;font-weight: 200;color: #717171;">IN</sup>
+                   </div>
+               </div>
+               <div class="head-middle">
+                   
+                   <input type="text" placeholder="Search" name="search" id="search"> 
+                   <button id="search-button">
+                       <span class="material-symbols-outlined" style="color: white;font-size:30px;font-weight: 50;">
+                           search
+                           </span>
+                   </button>
+                   <button id="mic"><span class="material-symbols-outlined" style="font-size:30px;font-weight: 100;color: white;">
+                       mic
+                       </span>
+                   </button>
+               </div>
+               <div class="head-right">
+                   <div class="navigation">
+                       <div><img src="images/right-navigation/create.svg" style="height:15px;padding-top: 7px;" alt="+"></div>
+                       <div><img src="images/right-navigation/Apps.svg" alt="+"></div>
+                       <div><img src="images/right-navigation/Notifications.svg"  style="height:22px;" alt="+"></div>
+                       <div><img src="images/right-navigation/Profile.svg" style="height:30px;border-radius: 50%;" alt="+"></div>
+                   </div>
+               </div>
+           </div>
+       </header> 
+   
+    
+      
+       <main>
+           <div class="main-container">
+               <div class="small-nav close">
+                   <div class="div-top" style="padding-right: 5px;padding-top: 20px;background-color: #212121;height: 100%;">
+                       <div class="small-nav-text-space">
+                           <span><img src="images/sidebar/home.svg"   style=" height: 22px;" alt="H"></span>
+                           <span>Home</span>
+                       </div>
+                       <div class="small-nav-text-space">
+                           <span><img src="images/sidebar/explore.svg"style=" height: 22px;" alt="H"></span>
+                           <span>Explore</span>
+                       </div>
+                       <div class="small-nav-text-space">
+                           <span><img src="images/sidebar/subsciption.svg"style=" height: 22px;" alt="H"></span>
+                           <span>Subscription</span>
+                       </div>
+                   </div>
+               </div>
+               <div class="nav open" style="">
+                   <div style="padding-left: 12px;padding-top: 10px;padding-bottom: 2px;">
+                       <div class="div-top">
+                           <div class="nav-text-space active">
+                               <span><img src="images/sidebar/home.svg" style="padding-right: 4px;"  alt="H"></span>
+                               <span>Home</span>
+                           </div>
+                           <div class="nav-text-space">
+                               <span><img src="images/sidebar/explore.svg"alt="H"></span>
+                               <span>Explore</span>
+                           </div>
+                           <div class="nav-text-space">
+                               <span><img src="images/sidebar/subsciption.svg"alt="H"></span>
+                               <span>Subscription</span>
+                           </div>
+                       </div>
+                       <div class="div-top2" style="border-top: 1px solid grey; margin-top: 11px;padding-top: 11px;">
+                           <div class="nav-text-space active">
+                               <span><img src="images/sidebar/library.svg"></span>
+                               <span>Library</span>
+                           </div>
+                           <div class="nav-text-space">
+                               <span><img src="images/sidebar/history.svg"></span>
+                               <span>History</span>
+                           </div>
+                           <div class="nav-text-space">
+                               <span><img src="images/sidebar/Your Video.svg"></span>
+                               <span>Your Videos</span>
+                           </div>
+                           <div class="nav-text-space">
+                               <span><img src="images/sidebar/watch_later.svg"></span>
+                               <span>Watch Later</span>
+                           </div>
+                           <div class="nav-text-space">
+                               <span><img src="images/sidebar/liked.svg"></span>
+                               <span>Liked Videos</span>
+                           </div>
+                           <div class="nav-text-space">
+                               <span><img src="images/sidebar/show more.svg"></span>
+                               <span>Show More</span>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="navbar-divs" >
+                       <div  style="font-size: 19px;padding: 10px;">
+                           Subscription
+                       </div>
+                       <div class="div-top">
+                           <div class="nav-text-space">
+                               <div>|/\|</div>
+                               <div>James Gouse</div>
+                           </div>
+                           <div class="nav-text-space">
+                               <span>|^-|</span>
+                               <span>Alan Cooper</span>
+                           </div>
+                           <div class="nav-text-space">
+                               <span>|_-|</span>
+                               <span>Marcus Levin</span>
+                           </div>
+                           <div class="nav-text-space">
+                               <span>|_-|</span>
+                               <span>Alexis Sears</span>
+                           </div>
+                           <div class="nav-text-space">
+                               <span>|_-|</span>
+                               <span>Jesica Lambert</span>
+                           </div>
+                           <div class="nav-text-space">
+                               <span>|_-|</span>
+                               <span>Anna White</span>
+                           </div>
+                           <div class="nav-text-space">
+                               <span>|_-|</span>
+                               <span>Skylar Dias</span>
+                           </div>
+                           <div class="nav-text-space">
+                               <span>|_-|</span>
+                               <span>Show More</span>
+                           </div>
+                          
+                       </div>
+                   </div>
+                   <div class="navbar-divs" >
+                       <div  style="font-size: 19px;padding: 10px;">
+                           Explore
+                       </div>
+                       <div class="div-top">
+                           <div class="nav-text-space">
+                               <div><img src="images/sidebar/"></div>
+                               <div>Trending</div>
+                           </div>
+                           <div class="nav-text-space">
+                               <span>|^-|</span>
+                               <span>Shopping</span>
+                           </div>
+                           <div class="nav-text-space">
+                               <span>|_-|</span>
+                               <span>Music</span>
+                           </div>
+                           <div class="nav-text-space">
+                               <span>|_-|</span>
+                               <span>Live</span>
+                           </div>
+                           <div class="nav-text-space">
+                               <span>|_-|</span>
+                               <span>Gaming</span>
+                           </div>
+                           <div class="nav-text-space">
+                               <span>|_-|</span>
+                               <span>News</span>
+                           </div>
+                           <div class="nav-text-space">
+                               <span>|_-|</span>
+                               <span>Sports</span>
+                           </div>
+                           <div class="nav-text-space">
+                               <span>|_-|</span>
+                               <span>Learning</span>
+                           </div>
+                           <div class="nav-text-space">
+                               <span>|_-|</span>
+                               <span>Fashion & Beauty</span>
+                           </div>
+                          
+                       </div>
+                   </div>
+                   <div class="navbar-divs" >
+                       <div  style="font-size: 19px;padding: 10px;">
+                           More from YouTube
+                       </div>
+                       <div class="div-top">
+                           <div class="nav-text-space">
+                               <div><img src="images/sidebar/youtube-premium.svg"></div>
+                               <div>YouTube Premium</div>
+                           </div>
+                           <div class="nav-text-space">
+                               <span>|^-|</span>
+                               <span>YouTube Studio</span>
+                           </div>
+                           <div class="nav-text-space">
+                               <span>|_-|</span>
+                               <span>YouTube Music</span>
+                           </div>
+                           <div class="nav-text-space">
+                               <span>|_-|</span>
+                               <span>YouTube Kids</span>
+                           </div>   
+                       </div>
+                   </div>
+                   <div class="navbar-divs" >
+                       
+                       <div class="div-top">
+                           <div class="nav-text-space">
+                               <div><img src="images/sidebar/setting.svg"></div>
+                               <div>Setting</div>
+                           </div>
+                           <div class="nav-text-space">
+                               <span><img src="images/sidebar/report-history.svg"></span>
+                               <span>Report history</span>
+                           </div>
+                           <div class="nav-text-space">
+                               <span><img src="images/sidebar/help.svg"></span>
+                               <span>Help</span>
+                           </div>
+                           <div class="nav-text-space">
+                               <span><img src="images/sidebar/send-feedback.svg"></span>
+                               <span>Send feedback</span>
+                           </div>   
+                       </div>
+                   </div>
+   
+                   <div class="navbar-divs" >
+                       <div  style="" class="nav-footer">
+                           <div>
+                               About Press Copyright Contact us Creators Advertise Developers
+                           </div>
+                           <div>
+                               Terms Privacy  Policy & Safety How Youtube works Test new features
+                           </div>
+                           <div style="font-size: 13px;color:#717171;word-spacing: 1px;">
+                               &copy 2023 Google LLC
+                           </div>
+                       </div>
+                      
+                   </div>
+               </div>
+   
+               <div class="div-content">
+                   <div class="" style=" border:2px solid rgb(243, 67, 216);margin-right: 0px;">
+                        <div class="channel-container">
+                            <div class="channel-banner">
+                                <img src="images/download.jfif" style="height: calc((100vw - 240px)/6.2 - 1px);width: 100%;">
+                            </div>
+                            <div class="channel-profile-view">
+                                <div style="padding-top: 2px;">
+                                    <div class="channelContentview">
+                                        <div id="profileImage">
+                                            <div >
+                                                <!-- <img src="images/download.jfif" style="border-radius: 50%;width: 140px;height: 140px;"> -->
+                                            </div>
+                                        </div>
+                                        <div class="channel-name-subscribe">
+                                            <div class="channel-name-about">
+                                                <div class="channelName">CarryMinati </div>
+                                                <div class="channelViews">
+                                                    <span>@CarryMinati</span><span>39.8M subscribers</span><span>186 videos</span>
+                                                </div>
+                                                <div class="channel-about" style="cursor: pointer;">
+                                                    I am an Indian Comedian<span>&nbsp></span>
+                                                </div>
+                                            </div>
+                                            <div class="subscribe">
+                                                <span>Subscribe</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="channel-profile-view" style="border-bottom: 2px solid rgba(78, 77, 77, 0.688); margin-bottom: 10px;">
+                                <div style="padding-top: 2px;">
+                                    <div class="channelContentview" style="padding-left: 35px;gap: 32px;">
+                                        <div class="categoryType"><span>HOME</span></div>
+                                        <div class="categoryType"><span>VIDEOS</span></div>
+                                        <div class="categoryType"><span>SHORTS</span></div>
+                                        <div class="categoryType"><span>PLAYLIST</span></div>
+                                        <div class="categoryType"><span>COMMUNITY</span></div>
+                                        <div class="categoryType"><span>CHANNEL</span></div>
+                                        <div class="categoryType"><span>ABOUT</span></div>
+                                        <div class="categoryType"><span><img src="images/right-navigation/search-icon.svg"></span></div>
+                                    </div>
+                                </div>
+                            </div>
+     
+                        </div> 
+
+                        <div class="channel-videos" style="padding-left: 25px;">
+                            <div class="flex-video-container">
+                                <div class="flex-video-item">
+                                    <div class="other-videos" style="padding: 0px;">
+                                        <div>
+                                            <div><img src="images/download.jfif" style="height:140px;width:250px; border-radius: 15px;"></div>
+                                        </div>
+                                        <div style="display: flex;flex-direction: column;gap:4px;padding-top: 8px;">
+                                            <div class="other-video-title">#Gadar2 Trailer | Trending |Official Trailer 11August |Sunny deol |Ammesha Patel |Anil....</div>
+                                            <div class="other-video-channel">Zee Studio</div>
+                                            <div class="other-video-channel">23M views * 5 month ago</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="flex-video-item">
+                                    <div class="other-videos" style="padding: 0px;">
+                                        <div>
+                                            <div><img src="images/download.jfif" style="height:140px;width:250px; border-radius: 15px;"></div>
+                                        </div>
+                                        <div style="display: flex;flex-direction: column;gap:4px;padding-top: 8px;">
+                                            <div class="other-video-title">#Gadar2 Trailer | Trending |Official Trailer 11August |Sunny deol |Ammesha Patel |Anil....</div>
+                                            <div class="other-video-channel">Zee Studio</div>
+                                            <div class="other-video-channel">23M views * 5 month ago</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="flex-video-item">
+                                    <div class="other-videos" style="padding: 0px;">
+                                        <div>
+                                            <div><img src="images/download.jfif" style="height:140px;width:250px; border-radius: 15px;"></div>
+                                        </div>
+                                        <div style="display: flex;flex-direction: column;gap:4px;padding-top: 8px;">
+                                            <div class="other-video-title">#Gadar2 Trailer | Trending |Official Trailer 11August |Sunny deol |Ammesha Patel |Anil....</div>
+                                            <div class="other-video-channel">Zee Studio</div>
+                                            <div class="other-video-channel">23M views * 5 month ago</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="flex-video-item">
+                                    <div class="other-videos" style="padding: 0px;">
+                                        <div>
+                                            <div><img src="images/download.jfif" style="height:140px;width:250px; border-radius: 15px;"></div>
+                                        </div>
+                                        <div style="display: flex;flex-direction: column;gap:4px;padding-top: 8px;">
+                                            <div class="other-video-title">#Gadar2 Trailer | Trending |Official Trailer 11August |Sunny deol |Ammesha Patel |Anil....</div>
+                                            <div class="other-video-channel">Zee Studio</div>
+                                            <div class="other-video-channel">23M views * 5 month ago</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="flex-video-item">
+                                    <div class="other-videos" style="padding: 0px;">
+                                        <div>
+                                            <div><img src="images/download.jfif" style="height:140px;width:250px; border-radius: 15px;"></div>
+                                        </div>
+                                        <div style="display: flex;flex-direction: column;gap:4px;padding-top: 8px;">
+                                            <div class="other-video-title">#Gadar2 Trailer | Trending |Official Trailer 11August |Sunny deol |Ammesha Patel |Anil....</div>
+                                            <div class="other-video-channel">Zee Studio</div>
+                                            <div class="other-video-channel">23M views * 5 month ago</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="flex-video-item">
+                                    <div class="other-videos" style="padding: 0px;">
+                                        <div>
+                                            <div><img src="images/download.jfif" style="height:140px;width:250px; border-radius: 15px;"></div>
+                                        </div>
+                                        <div style="display: flex;flex-direction: column;gap:4px;padding-top: 8px;">
+                                            <div class="other-video-title">#Gadar2 Trailer | Trending |Official Trailer 11August |Sunny deol |Ammesha Patel |Anil....</div>
+                                            <div class="other-video-channel">Zee Studio</div>
+                                            <div class="other-video-channel">23M views * 5 month ago</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="flex-video-item">
+                                    <div class="other-videos" style="padding: 0px;">
+                                        <div>
+                                            <div><img src="images/download.jfif" style="height:140px;width:250px; border-radius: 15px;"></div>
+                                        </div>
+                                        <div style="display: flex;flex-direction: column;gap:4px;padding-top: 8px;">
+                                            <div class="other-video-title">#Gadar2 Trailer | Trending |Official Trailer 11August |Sunny deol |Ammesha Patel |Anil....</div>
+                                            <div class="other-video-channel">Zee Studio</div>
+                                            <div class="other-video-channel">23M views * 5 month ago</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="flex-video-item">
+                                    <div class="other-videos" style="padding: 0px;">
+                                        <div>
+                                            <div><img src="images/download.jfif" style="height:140px;width:250px; border-radius: 15px;"></div>
+                                        </div>
+                                        <div style="display: flex;flex-direction: column;gap:4px;padding-top: 8px;">
+                                            <div class="other-video-title">#Gadar2 Trailer | Trending |Official Trailer 11August |Sunny deol |Ammesha Patel |Anil....</div>
+                                            <div class="other-video-channel">Zee Studio</div>
+                                            <div class="other-video-channel">23M views * 5 month ago</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="flex-video-item">
+                                    <div class="other-videos" style="padding: 0px;">
+                                        <div>
+                                            <div><img src="images/download.jfif" style="height:140px;width:250px; border-radius: 15px;"></div>
+                                        </div>
+                                        <div style="display: flex;flex-direction: column;gap:4px;padding-top: 8px;">
+                                            <div class="other-video-title">#Gadar2 Trailer | Trending |Official Trailer 11August |Sunny deol |Ammesha Patel |Anil....</div>
+                                            <div class="other-video-channel">Zee Studio</div>
+                                            <div class="other-video-channel">23M views * 5 month ago</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="flex-video-item">
+                                    <div class="other-videos" style="padding: 0px;">
+                                        <div>
+                                            <div><img src="images/download.jfif" style="height:140px;width:250px; border-radius: 15px;"></div>
+                                        </div>
+                                        <div style="display: flex;flex-direction: column;gap:4px;padding-top: 8px;">
+                                            <div class="other-video-title">#Gadar2 Trailer | Trending |Official Trailer 11August |Sunny deol |Ammesha Patel |Anil....</div>
+                                            <div class="other-video-channel">Zee Studio</div>
+                                            <div class="other-video-channel">23M views * 5 month ago</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                   </div>
+                   
+               </div>
+           </div>
+       </main>
+   </div>
+       <script src="home.js"></script>
+       <script src="script.js"></script>
+       <script src="channel.js"></script>
+</body>
+</html>
