@@ -1,7 +1,8 @@
 const baseUrl = `https://www.googleapis.com/youtube/v3`;
-// const apiKey = `AIzaSyBh8h1bK9Gmdo-XTdXg4q4T8mLLUgcPsJw`;//archana
-const apiKey =`AIzaSyCdopOmumoijAacpleFFNOszQRI_e2BeJE`;
+const apiKey = `AIzaSyBh8h1bK9Gmdo-XTdXg4q4T8mLLUgcPsJw`;
 
+
+// const apiKey = "AIzaSyC0lDc68z2wZ19AT7_ST7RQ2833ZIm1IyE" ;
 const flexContainer = document.getElementsByClassName("flex-container")[0];
 const searchButton = document.getElementById("search-button");
 searchButton.addEventListener("click",fetchVedios);
@@ -9,7 +10,7 @@ searchButton.addEventListener("click",fetchVedios);
 //add more in array
 //"morning vibes","motivational speaker","devotional songs","news","new technology","stand up comedy","vlogs","netflix"
 
-let arr =["official trailer","netflix","new songs","new movie songs","news","new technology","stand up comedy","vlogs"];
+let arr =["official trailer","netflix","new songs"]//"new movie songs","news","new technology","stand up comedy","vlogs"];
 
 arr.forEach(element=>{
     fetchRandomVedios(element);
@@ -17,7 +18,7 @@ arr.forEach(element=>{
 
 async function fetchRandomVedios(element){
     const searchString=element;
-    const url = `${baseUrl}/search?key=${apiKey}&q=${searchString}&part=snippet&maxResults=6`;
+    const url = `${baseUrl}/search?key=${apiKey}&q=${searchString}&part=snippet&maxResults=20`;
     const response = await fetch(url,{method:"GET"});
     const result = await response.json();
     console.log(result);
@@ -26,10 +27,27 @@ async function fetchRandomVedios(element){
 }
 
 async function fetchVedios(){
+//when diverting from the full video page==================
+    const currentPath = window.location.pathname;
+    console.log('Current Path:', currentPath);
+    const fileName = currentPath.split('/').pop();
+    console.log('File Name:', fileName);
+
+    // if(fileName!="index.html"){
+    //     window.location.href="index.html";
+    
+    // }else if(fileName!="index.html"){
+    //     window.location.href="index.html";
+    // }else{
+
+    // }
+//=======================================================
+
+
     const inputvalue=document.querySelector("#search").value;
     console.log(inputvalue);
     const searchString=inputvalue;
-    const url = `${baseUrl}/search?key=${apiKey}&q=${searchString}&part=snippet&maxResults=15`;
+    const url = `${baseUrl}/search?key=${apiKey}&q=${searchString}&part=snippet&maxResults=20`;
     const response = await fetch(url,{method:"GET"});
     const result = await response.json();
     console.log(result);
@@ -86,13 +104,14 @@ function addVideoDetail(videos){
         // console.log(videoIdResult);
         const {snippet} = video;
         //===================fetching channel Data==============
-        // const channelId= getChannelDetails(snippet.channelId);
-        const channelImg="images/download.jfif";
-        // channelId.then((value)=>{
-        //     // console.log(value);
-        //     channelImg=value;
-        //     // console.log(channelImg);
-        // })
+        var channelImg="images/download.jfif";
+        const channelId=  getChannelDetails(snippet.channelId);
+        channelId.then((value)=>{
+
+                console.log(value);
+                channelImg=value;
+            //    return value;
+            
         // console.log(channelImg);
         //========================================================
 
@@ -134,6 +153,7 @@ function addVideoDetail(videos){
         })
        
     })
+    })
 }
 //  fetchVedios();
 
@@ -145,12 +165,24 @@ function addVideoDetail(videos){
     // const singlevideoId=videoId;
     // console.log("asd",singlevideoId);
     console.log("clicked");
-   
+    // if(sessionStorage.getItem('suggestString')!=""){
+    //     const suggestString=sessionStorage.getItem('suggestString');
+    //     sessionStorage.setItem('suggestString',suggestString);
+    //     console.log(suggestString);
+
+
+    // }else{
+        const suggestString=document.querySelector("#search").value;
+        sessionStorage.setItem('suggestString',suggestString);
+        console.log(suggestString);
+
+    // }
     console.log(event.currentTarget);
     const flexopen = event.currentTarget;
     const singleVideoId = flexopen.querySelector(".openVideo").id;
     // console.log(videoId);
     sessionStorage.setItem('singleVideoId',singleVideoId);
+    
     window.location.href="video.html";
  }
 

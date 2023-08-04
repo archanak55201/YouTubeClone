@@ -201,7 +201,7 @@ header{
 .div-content{
     height: 92vh;
     overflow-y: scroll;
-    border: 5px solid green;
+    /* border: 5px solid green; */
     position: relative;
  
 }

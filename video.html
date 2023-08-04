@@ -61,7 +61,7 @@
                     </div>
 
                     <div class="player-detail">
-                        <!-- <div class="play-detail">
+                        <div class="play-detail">
                             <div class="video-title-like">
                                 <div class="title">
                                     <div>Amazon 4k - The World’s Largest Tropical Rainforest Part 2 | Jungle Sounds | Scenic Relaxation Film</div>
@@ -69,10 +69,10 @@
                                 <div class="subscribe-like">
                                     <div class="about-channel">
                                         <div style=" display: flex;flex-direction: row;gap:15px">
-                                            <img src="images/download.jfif" style="width: 47px;height: 47px;border-radius: 50%;">
+                                            <img class="channelImage" src="images/download.jfif" style="width: 47px;height: 47px;border-radius: 50%;">
                                             <div style="padding-top: 3px;padding-bottom: 3px">
-                                                <div style="font-size:19px;font-weight: 400;margin-bottom: 1px;">Scenic scene</div>
-                                                <div style="font-size: 13px;color:#717171">586K subscribers</div>
+                                                <div style="font-size:19px;font-weight: 400;margin-bottom: 1px;" id="vChannelName">Scenic scene</div>
+                                                <div style="font-size: 13px;color:#717171" id="vchannelSubscriber">586K subscribers</div>
                                             </div>
                                         </div>
                                         <div style="margin-left: 10px;padding-left: 10px;padding-top: 2px;">
@@ -86,7 +86,7 @@
                                             <div class="like-dislike">       
                                                 <span style="margin-right:10px;" >
                                                     <img src="images/video/like.svg">
-                                                    213K
+                                                    <span id="videoLikes">213K</span>
                                                 </span>
                                                 <span style="border-left: 1px solid gray;padding:2px;padding-left: 10px;">
                                                     <img src="images/video/dislike.svg">
@@ -112,22 +112,22 @@
 
                             <div class="video-description">
                                 <div style="font-size: 18px;font-weight: 500;">
-                                    <span>24M views</span>
-                                    <span>1 year ago</span>
+                                    <span id="videoViews">24M views</span>
+                                    <span id="postTime">1 year ago</span>
                                 </div>
                                 <div class="full-desciption">
-                                    <div style="font-size: 16px;font-weight: 500;">
+                                    <div style="font-size: 16px;font-weight: 500;" id="vdesc">
                                         In this Scenic Relaxation Film you'll be witness to The World's Largest Tropical Rainforest - The Amazon! Sit back and relax while enjoying this film with jungle sounds captured on 4K ULTRA HD footage along with relaxing music.
                                     </div>
                                     <div style="margin-top: 5px;">Show More</div>
                                 </div>
                             </div>
-                        </div> -->
+                        </div>
                     </div>
 
                     <div class="video-comment">
                         <div class="comment">
-                            <span>2558</span>
+                            <span id="vComments">2558</span>
                             <span>Comments</span>
                         </div>
                         <div class="sortby">
@@ -158,13 +158,13 @@
                     </div>
                     
                     <div class="all-comments" style="padding-bottom: 10px;">
-                        <div class="single-comment">
+                        <div class="single-comment" style="border-bottom: 1px solid rgba(114, 112, 112, 0.363);">
                             <div class="video-comment">
                                 <div class="commentProfile">
                                     <img src="images/download.jfif" style="width: 50px;height: 50px;border-radius: 50%;">
                                 </div>
                                 <div class="commentDetail">
-                                    <div class="profile-id" style="font-size: 15px;">
+                                    <div class="profile-id" style="font-size: 17px;font-style: oblique;">
                                         @rangeshSharma450
                                     </div>
                                     <div class="full-comment" style="font-size: 18px;">
@@ -196,7 +196,7 @@
                
             </div>
             <div class="secondary">
-                <div class="other-videos">
+                <!-- <div class="other-videos">
                     <div>
                         <div><img src="images/download.jfif" style="height:125px;width:230px; border-radius: 15px;"></div>
                     </div>
@@ -205,65 +205,17 @@
                         <div class="other-video-channel">Zee Studio</div>
                         <div class="other-video-channel">23M views * 5 month ago</div>
                     </div>
-                </div>
+                </div> -->
 
-                <div class="other-videos">
-                    <div>
-                        <div><img src="images/download.jfif" style="height:125px;width:230px; border-radius: 15px;"></div>
-                    </div>
-                    <div style="display: flex;flex-direction: column;gap:4px;padding-top: 8px;">
-                        <div class="other-video-title">#Gadar2 Trailer | Trending |Official Trailer 11August |Sunny deol |Ammesha Patel |Anil....</div>
-                        <div class="other-video-channel">Zee Studio</div>
-                        <div class="other-video-channel">23M views * 5 month ago</div>
-                    </div>
-                </div>
-                <div class="other-videos">
-                    <div>
-                        <div><img src="images/download.jfif" style="height:125px;width:230px; border-radius: 15px;"></div>
-                    </div>
-                    <div style="display: flex;flex-direction: column;gap:4px;padding-top: 8px;">
-                        <div class="other-video-title">#Gadar2 Trailer | Trending |Official Trailer 11August |Sunny deol |Ammesha Patel |Anil....</div>
-                        <div class="other-video-channel">Zee Studio</div>
-                        <div class="other-video-channel">23M views * 5 month ago</div>
-                    </div>
-                </div>
-                <div class="other-videos">
-                    <div>
-                        <div><img src="images/download.jfif" style="height:125px;width:230px; border-radius: 15px;"></div>
-                    </div>
-                    <div style="display: flex;flex-direction: column;gap:4px;padding-top: 8px;">
-                        <div class="other-video-title">#Gadar2 Trailer | Trending |Official Trailer 11August |Sunny deol |Ammesha Patel |Anil....</div>
-                        <div class="other-video-channel">Zee Studio</div>
-                        <div class="other-video-channel">23M views * 5 month ago</div>
-                    </div>
-                </div>
-                <div class="other-videos">
-                    <div>
-                        <div><img src="images/download.jfif" style="height:125px;width:230px; border-radius: 15px;"></div>
-                    </div>
-                    <div style="display: flex;flex-direction: column;gap:4px;padding-top: 8px;">
-                        <div class="other-video-title">#Gadar2 Trailer | Trending |Official Trailer 11August |Sunny deol |Ammesha Patel |Anil....</div>
-                        <div class="other-video-channel">Zee Studio</div>
-                        <div class="other-video-channel">23M views * 5 month ago</div>
-                    </div>
-                </div>
-                <div class="other-videos">
-                    <div>
-                        <div><img src="images/download.jfif" style="height:125px;width:230px; border-radius: 15px;"></div>
-                    </div>
-                    <div style="display: flex;flex-direction: column;gap:4px;padding-top: 8px;">
-                        <div class="other-video-title">#Gadar2 Trailer | Trending |Official Trailer 11August |Sunny deol |Ammesha Patel |Anil....</div>
-                        <div class="other-video-channel">Zee Studio</div>
-                        <div class="other-video-channel">23M views * 5 month ago</div>
-                    </div>
-                </div>
+               
             
             </div>
 
         </div>
 
     </div>
-
     <script src="video.js"></script>
+    <script src="home.js"></script>
+
 </body>
 </html>

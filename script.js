@@ -47,7 +47,7 @@ sidebarmenu.addEventListener("click",function(){
         // flexVideoContainer.style.gridTemplateColumns = "1fr 1fr 1fr 1fr 1fr 1fr";
         flexItem.forEach(ele =>{
             console.log(ele);
-            ele.style.width="calc(25% - 10px)";
+            ele.style.width="calc(25% - 20px)";
         })
       
     }else{
